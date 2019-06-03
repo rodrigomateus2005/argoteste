@@ -10,6 +10,8 @@ namespace TesteArgo
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("teste");
+            Console.ReadKey();
         }
 
 

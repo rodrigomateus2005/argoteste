@@ -10,12 +10,14 @@ namespace TesteArgo
     {
         public List<int> CriarLista(int quantidade)
         {
-            return null;
+            int[] arr = (int[]) Array.CreateInstance(typeof(int), quantidade);
+            return arr.ToList();
         }
 
         public List<int> OrdenarLista(params int[] valores)
         {
-            return null;
+            if (valores == null) return null;
+            return valores.OrderBy(x => x).ToList();
         }
     }
 }
